@@ -21,6 +21,6 @@ jobs:
     - run:
         bundle exec rake
       env:
-        TOKEN: ${{ secrets.DUTY_TOKEN }}
+        TOKEN: ${{ secrets.GITHUB_TOKEN }}
         REPO: ${{ github.repository }}     
 
