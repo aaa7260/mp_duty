@@ -2,6 +2,8 @@ name: generate a Markdown file
 on:
   issues:
     types: [closed]
+    schedule:
+    - cron: '0 */24 * * *'
 jobs:
   run:
     if: ${{ contains(github.event.issue.labels.*.name, 'fetched') }}
