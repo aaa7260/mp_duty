@@ -18,7 +18,7 @@ jobs:
           pattern: "<!-- 1issueTable -->"
           state: "closed"
           labels: "生信技能树,fetched"
-          creator: "ixxmu"
+          creator: "aaa7260"
           per_page: 5
       - name: 2Auto Issue List in README
         uses: zhang0ZGC/issue-list-readme@master
@@ -27,7 +27,7 @@ jobs:
           pattern: "<!-- 2issueTable -->"
           state: "closed"
           labels: "YuLabSMU,fetched"
-          creator: "ixxmu"
+          creator: "aaa7260"
           per_page: 5
           
       - name: 3Auto Issue List in README
@@ -37,7 +37,16 @@ jobs:
           pattern: "<!-- 3issueTable -->"
           state: "closed"
           labels: "果子学生信,fetched"
-          creator: "ixxmu"
+          creator: "aaa7260"
+          per_page: 5
+      - name: 4Auto Issue List in README
+        uses: zhang0ZGC/issue-list-readme@master
+        with:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          pattern: "<!-- 3issueTable -->"
+          state: "closed"
+          labels: "生信钱同学,fetched"
+          creator: "aaa7260"
           per_page: 5
       - name: add-and-commit
         uses: EndBug/add-and-commit@v4
