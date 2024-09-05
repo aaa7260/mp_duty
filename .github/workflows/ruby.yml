@@ -3,6 +3,8 @@ name: Ruby
 on:
   issues:
     types: [opened]
+    schedule:
+     - cron: '0 */24 * * *'
 
 jobs:
   build:
